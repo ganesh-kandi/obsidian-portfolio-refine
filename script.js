@@ -303,6 +303,22 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const iframe = document.getElementById("hidden_iframe");
+    const thankYouMessage = document.getElementById("thankYouMessage");
+
+    if (iframe) {
+        iframe.addEventListener("load", function () {
+            // If the form was just submitted
+            thankYouMessage.style.display = "block";
+            form.reset();
+            thankYouMessage.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+});
+
+
 // Add rainbow animation for Easter egg
 const style = document.createElement('style');
 style.textContent = `

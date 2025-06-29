@@ -406,6 +406,122 @@ body {
     margin-bottom: 0.5rem;
 }
 
+#skills .sec-wrapper > .sec-content {
+     padding: 40px 0px 30px;
+   }
+
+ #skills {
+     position: relative;
+     width: 100%;
+     min-height: 600px;
+     height: auto;
+      background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ),url("skills.jpg") no-repeat center top;
+     background-color: transparent;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -ms-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-attachment: fixed; /* Doesnt scroll along with page */
+     overflow: hidden;
+     padding-top: 40px;
+   }
+   #skills .sec-wrapper > .sec-content {
+     padding: 40px 0px 30px;
+   }
+   /* Trying rem for logo images */
+   .skill-logo-img {
+   	margin:1rem 0.5rem;
+   	height:55px
+   }
+   .skill-logo-row{
+   	text-align:center;
+   	padding:2rem 2rem 0 2rem;
+   	font-size:3rem
+   }
+
+ .section .sec-subtitle {
+   color: #fff;
+   font-size: 15px;
+   font-style: normal;
+ }
+
+  .heading {
+    text-align: center;
+  }
+   .heading {
+     text-align: center;
+   }
+   .heading1 {
+     text-align: center;
+     color: #ffffff; /* white color */
+     font-family: 'Poppins', 'Roboto', 'Arial', sans-serif; /* clean and modern fonts */
+     font-weight: 600; /* semi-bold for better impact */
+     letter-spacing: 1px; /* slight spacing for elegance */
+     font-size: 2rem; /* make it bigger, adjust if needed */
+   }
+/*experience*/
+ .services-content {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 2rem;
+ }
+
+ /*.services-box {
+   padding: 20px;
+   width: 260px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border-radius: 0.5rem;
+   border-bottom: 2px solid var(--main-color);
+   box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+ }*/
+
+ .services-box {
+   padding: 20px;
+   width: 260px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border-radius: 0.5rem;
+   /*background-color: #eaeef2;*/ /* Solid white background for contrast */
+   border-bottom: 3px solid var(--main-color);
+   border: 1px solid #ddd;
+   border-top: 3px solid var(--main-color);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Elevation from background */
+ }*/
+
+ .services-box:hover {
+   background-color: #02225a;
+ }
+
+ .services-box h3 {
+   font-size: 1rem;
+   font-weight: 600;
+   margin: 0.7rem 0 0.4rem;
+ }
+
+ .services-box:hover h3 {
+   color: #fff;
+ }
+
+ .services-box .bx {
+   padding-top: 2rem;
+   font-size: 54px;
+   color: var(--main-color);
+ }
+
+ .services-box:hover .bx {
+   color: #22cf91;
+ }
+  .information .info-box .bx {
+    font-size: 22px;
+  }
 .progress-bar {
     height: 100%;
     background: var(--gradient-primary);
@@ -735,7 +851,25 @@ body {
     .section-title {
         font-size: 2rem;
     }
-    
+    .section-title-exp {
+            font-size: 1rem;
+        }
+     .contact-button {
+       width: 160px;
+       cursor: pointer;
+       background: #2768d9;
+       color: #fff;
+       align-items: center;
+       justify-content: center;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       margin-left: 35%;
+     }
+
+     .contact-button:hover {
+       background: var(--hover);
+     }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
